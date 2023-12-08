@@ -1,0 +1,168 @@
+/* Add your custom styles here */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: #fafafa; /* Example color, adjust as needed */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow to the navbar */
+}
+/* Example: Centering the navbar brand */
+.navbar-brand {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Example: Adjusting the spacing of navbar items */
+.navbar-nav {
+    margin-left: auto;
+}
+
+/* Add more styles as needed */
+.navbar-brand img{
+    width: 50%;
+    height: auto;
+}
+#submitTestBtn {
+    margin-left: 470%;
+}
+#timeRemaining{
+padding-left: 75%;
+padding-top: 1%;
+}
+
+
+/* Style for Main Container */
+#mainContainer {
+    display: flex;
+    margin-left: 5%;
+}
+
+/* Style for Question Palette Container */
+#questionPaletteContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow to the question palette box */
+    padding: 20px; /* Add padding for spacing from all sides */
+    border-radius: 10px;
+}
+
+/* Style for Question Palette */
+#questionPalette {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns in a row */
+    grid-template-rows: repeat(4, 1fr); /* 4 rows */
+    grid-gap: 5px; /* Adjust based on your design */
+}
+
+/* Style for Question Box in Question Palette */
+.question-box {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.question-box.selected {
+    background-color: #4CAF50; /* Green color for selected questions */
+    color: #fff;
+}
+
+/* Style for Question Container */
+#questionContainer {
+    position: fixed;
+    top: 47%; /* Adjust top position as needed */
+    left: 50%; /* Adjust left position as needed */
+    transform: translate(-50%, -50%);
+    width: 750px; /* Set a fixed width for the container */
+    height: auto; /* Allow the height to adjust based on content */
+    max-height: 80vh; /* Set a maximum height as a percentage of the viewport height */
+    overflow-y: auto; /* Add a vertical scrollbar if content exceeds the container height */
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Style for Question Number Heading */
+.question-heading {
+    color: #007BFF; /* Blue color for the heading */
+    margin-bottom: 10px; /* Adjust margin as needed */
+    margin-left: 10px;
+}
+
+/* Style for Options */
+#optionsForm {
+    list-style: none; /* Remove bullets from options */
+    margin-left: 0; /* Remove default margin */
+}
+
+
+/* Style for Reset Answer Button */
+#resetButton {
+    background-color: #FF0000 /* Red color for reset button */ !important;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Adjust the margin as needed */
+    margin-bottom: 10px; /* Added margin for better spacing */
+}
+
+/* Style for Save and Next Button */
+#saveNextButton {
+    background-color: #007BFF; /* Blue color for save and next button */
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Adjust the margin as needed */
+    margin-bottom: 10px; /* Added margin for better spacing */
+}
+
+/* Positioning for Save and Next Button */
+#saveNextButton {
+    position: absolute;
+    right: 10px;
+}
+
+/* Style for Question Box in Question Palette - Answered */
+.question-box.answered {
+    background-color: #4CAF50; /* Green color for answered questions */
+    color: #fff;
+}
+
+/* Style for Question Box in Question Palette - Current Question */
+.question-box.current-question {
+    background-color: #FF0000; /* Red color for current question */
+    color: #fff;
+}
+
+.option {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+
+
+.option.selected {
+    background-color: #cce5ff; /* Light blue background for selected option */
+    color: #004085; /* Dark blue text color for selected option */
+    border: 1px solid #b8daff; /* Border color for selected option */
+}
+
+
+
